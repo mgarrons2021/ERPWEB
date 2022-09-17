@@ -1,7 +1,7 @@
 <?php 
 require_once '../config/conexion.inc.php';
 
-$sucursal= $db->GetAll('select * from sucursal');
+$sucursal= $db->GetAll("select * from sucursal  where estado = 'activo' ");
 ?>
 <!DOCTYPE html>
 <html lang="en">
